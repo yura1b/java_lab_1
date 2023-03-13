@@ -37,6 +37,7 @@ public class Camera {
         return defaultcamera;
     }
 
+
     public static void main(String[] args) {
 
         Camera[] cameras = {
