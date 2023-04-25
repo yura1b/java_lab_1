@@ -41,4 +41,10 @@ public class DigitalCamera extends Camera {
         this.resolution = resolution;
         this.zoom = zoom;
     }
+    public String getHeaders(){
+        return super.getHeaders()+","+"resolution"+","+"zoom"+","+"memoryCardType"+","+"photoCount";
+    }
+    public String toCSV(){
+        return super.toCSV() + "," + resolution + "," + zoom+ "," + memoryCardType + "," + photoCount;
+    }
 }

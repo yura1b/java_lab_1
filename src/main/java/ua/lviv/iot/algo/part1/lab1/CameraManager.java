@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 @Getter
 public class CameraManager {
 
+    List<Camera> cameras = new ArrayList<>();
     private List<Camera> cameras = new ArrayList<>();
 
     public void addCamera(Camera camera) {
@@ -27,5 +28,4 @@ public class CameraManager {
         return cameras.stream().
                 filter(camera -> camera.getBrand() == brand).toList();
     }
-
 }

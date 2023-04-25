@@ -17,6 +17,12 @@ public class FilmCamera extends Camera{
         this.filmType = filmType;
         this.filmISO = filmISO;
     }
+    public String getHeaders(){
+        return super.getHeaders() + "," + "filmType" + "," + "filmISO";
+    }
+    public String toCSV(){
+        return super.toCSV() + "," + filmType + "," +filmISO;
+    }
 
     @Override
     public void takePhoto() {

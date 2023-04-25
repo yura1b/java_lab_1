@@ -10,8 +10,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CameraManagerTest {
 
-
-
     @Test
     public void addCameraToListTest() {
     CameraManager cameraManager = new CameraManager();
@@ -45,7 +43,4 @@ class CameraManagerTest {
         assertEquals(1,cameraManager.findCameraWithBrandSony("Sony").size());
 
     }
-    }
-
-
-
+}

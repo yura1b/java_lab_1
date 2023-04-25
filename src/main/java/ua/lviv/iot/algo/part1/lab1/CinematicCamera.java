@@ -15,6 +15,12 @@ public class CinematicCamera extends Camera{
         super(brand,model,lens);
         this.lensType=lensType;
     }
+    public String getHeaders(){
+        return super.getHeaders()+","+"lensType";
+    }
+    public String toCSV(){
+        return super.toCSV()+","+lensType;
+    }
 
     @Override
     public void takePhoto() {
