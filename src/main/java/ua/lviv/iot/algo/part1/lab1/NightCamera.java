@@ -24,6 +24,13 @@ public class NightCamera extends Camera{
         return super.toCSV()+","+hasZoom;
     }
 
+    private boolean hasZoom;
+
+    public NightCamera(String brand, String model, int lens,boolean hasZoom){
+
+        super(brand,model,lens);
+        this.hasZoom=hasZoom;
+    }
     @Override
     public void takePhoto() {
         System.out.println("photo with.."+hasZoom);

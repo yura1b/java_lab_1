@@ -29,5 +29,4 @@ public abstract class Camera {
     public String toCSV(){
         return   brand +","+ model+","+lens;
     }
-
 }

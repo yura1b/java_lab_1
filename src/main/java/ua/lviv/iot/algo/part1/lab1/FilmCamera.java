@@ -23,6 +23,7 @@ public class FilmCamera extends Camera{
     public String toCSV(){
         return super.toCSV() + "," + filmType + "," +filmISO;
     }
+
     @Override
     public void takePhoto() {
         System.out.println("Photo with cat " + filmType + filmISO);

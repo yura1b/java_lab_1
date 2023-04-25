@@ -21,6 +21,7 @@ public class CinematicCamera extends Camera{
     public String toCSV(){
         return super.toCSV()+","+lensType;
     }
+
     @Override
     public void takePhoto() {
         System.out.println("photo for Tytanic"+lensType);
